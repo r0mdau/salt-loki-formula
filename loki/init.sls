@@ -19,7 +19,6 @@ loki_binary:
     - source_hash: 3235f2a77149a4f7867023a249438d8bf81287cc
     - user: loki
     - group: loki
-    - mode: '0755'
     - enforce_toplevel: False
 
 loki_systemd_unit:

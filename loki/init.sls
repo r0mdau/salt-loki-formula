@@ -14,7 +14,7 @@ loki_conf:
 
 loki_binary:
   archive.extracted:
-    - name: /usr/local/bin
+    - name: /usr/local/bin/loki
     - source: https://github.com/grafana/loki/releases/download/v2.4.1/loki-linux-amd64.zip
     - source_hash: 3235f2a77149a4f7867023a249438d8bf81287cc
     - user: loki

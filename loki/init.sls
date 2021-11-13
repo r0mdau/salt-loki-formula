@@ -1,22 +1,10 @@
 loki:
   user.present:
     - fullname: Grafana Loki
-    - shell: /bin/false
+    - shell: /usr/sbin/nologin
     - home: /opt/loki
     - uid: 4000
     - gid: 4000
-
-loki_directory:
-  file.directory:
-    - name: /opt/loki
-    - user: loki
-    - group: loki
-    - dir_mode: 755
-    - file_mode: 644
-    - recurse:
-      - user
-      - group
-      - mode
 
 loki_conf:
   file.managed:

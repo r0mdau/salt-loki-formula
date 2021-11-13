@@ -3,8 +3,6 @@ loki:
     - fullname: Grafana Loki
     - shell: /usr/sbin/nologin
     - home: /opt/loki
-    - uid: 4000
-    - gid: 4000
 
 loki_conf:
   file.managed:

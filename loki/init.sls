@@ -20,6 +20,7 @@ loki_binary:
     - user: loki
     - group: loki
     - mode: '0755'
+    - enforce_toplevel: False
 
 loki_systemd_unit:
   file.managed:

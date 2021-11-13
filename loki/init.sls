@@ -23,7 +23,7 @@ loki_binary:
 
 loki_systemd_unit:
   file.managed:
-    - name: /etc/systemd/system/example.service
+    - name: /etc/systemd/system/loki.service
     - source: salt://loki/files/loki.service
   module.run:
     - name: service.systemctl_reload

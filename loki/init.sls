@@ -34,5 +34,7 @@ loki_running:
   service.running:
     - name: loki
     - enable: True
+    - restart: True
     - watch:
       - module: loki_systemd_unit
+      - file: /opt/loki/loki-config.yml
